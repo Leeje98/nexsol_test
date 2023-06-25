@@ -20,7 +20,7 @@ const CalenderLee = () => {
   }
 
   return (
-      <div className='calendar'>
+      <div className='calendar_Lee'>
           <RenderHeader
               currentMonth={currentMonth}
               prevMonth={prevMonth}
@@ -28,7 +28,7 @@ const CalenderLee = () => {
           />
           <RenderDays />
           <RenderBody 
-            currentMonth={currentMonth}
+            currentMonth={currentMonth} 
             selectedDate={selectedDate}
             onDateClick={onDateClick}
           />

@@ -32,9 +32,9 @@ const RenderBody = ({ currentMonth, selectedDate, onDateClick }) => {
             days.push(
                 <div
                  className={`col cell ${ // 오늘의 날짜를 표시해주는(selected) 것과 현재 달의 날짜가 아닌 날들은 색상 컨트롤
-                    !isSameMonth(day, monthStart)
+                    !isSameMonth(day, monthStart)   // 현재 달이 아닌 이웃한 달
                     ? 'disabled'
-                    : isSameDay(day, selectedDate)
+                    : isSameDay(day, selectedDate)  // 오늘
                     ? 'selected'
                     : format(currentMonth, 'M') !== format(day, 'M')
                     ? 'not-valid'

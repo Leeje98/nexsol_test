@@ -1,0 +1,73 @@
+* {
+    display: block;
+    font-family: 'Noto Sans';
+}
+
+.Calendarbox {
+    width: 400px;
+    border: 1px solid #333;
+}
+
+.calendar_Lee {
+    display: block;
+}
+
+.calenderHerder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 34px;
+}
+
+.calenderHerder .iconBtn {
+    width: 34px;
+    height: 34px;
+    margin: 0 8px; 
+    padding: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.calenderHerder .text {
+    display: flex;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+}
+
+.days.row .col { 
+    flex: 1;
+    height: 20px;
+    text-align: center;
+}
+
+.calendar_Lee .body .row {
+    display: flex;
+    justify-content: space-around;
+    height: 36px;
+    align-items: center;
+    margin-top: 2px;
+}
+
+
+.calendar_Lee .body .row .cell {
+    width: 21px;
+    /* flex: 1; */
+    height: 24px;
+    text-align: center;
+}
+.calendar_Lee .body .row .cell.disabled {
+    opacity: 0.6; 
+}
+.calendar_Lee .body .row .cell.selected {
+    color: white;
+    background-color: orange;
+    border-radius: 50%;
+    padding: 2px;
+}
